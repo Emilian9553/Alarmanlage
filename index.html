@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🚨 ALARM 🚨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="alarm-container">
+        <button id="alarmBtn" class="alarm-btn">
+            <div class="btn-content">
+                <span id="btnText" class="btn-text">ALARM</span>
+                <span id="btnSubText" class="btn-subtext">Drücken um auszulösen</span>
+            </div>
+            
+            <div class="pulse-ring ring-1"></div>
+            <div class="pulse-ring ring-2"></div>
+            <div class="pulse-ring ring-3"></div>
+        </button>
+    </div>
+
+    <div id="statusBox" class="status-box">Bereit</div>
+
+    <audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
